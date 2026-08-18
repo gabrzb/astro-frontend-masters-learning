@@ -1,101 +1,92 @@
-[![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)](https://frontendmasters.com)
+# Astro Frontend Masters Learning
 
-This is a companion repo for the [Astro course](https://frontendmasters.com/courses/astro/) on [Frontend Masters](https://frontendmasters.com).
+This repository contains the small-business website I built while following the Frontend Masters Astro course. The project explores common website workflows while combining Astro pages, content collections, API data, and interactive components from multiple UI frameworks.
 
-## Setup
+## What was Built
 
-The `start` branch from this repository contains some additional assets and is used as a starting point for the course:
+### Marketing landing page
 
-> We recommend using Node version 18 for this course.
+- Hero section with Astro image handling
+- Reusable cards
+- Featured products
+- Newsletter signup form
 
-```bash
-git clone https://github.com/learnwithjason/astro-frontend-masters.git
-cd astro-frontend-masters
-git checkout start
+### Shop
+
+- Nested layouts
+- Product data loaded from an API
+- A shopping cart built with Solid
+- Add-to-cart buttons built with React
+- Shared state between React and Solid islands using Nano Stores
+
+### Blog
+
+- Markdown posts managed through Astro Content Collections
+- A validated content schema with custom slugs
+- Blog listing and dynamically generated post routes
+- An RSS feed endpoint
+
+### Additional pages
+
+- Markdown-based About page
+- Custom 404 page
+
+## Astro Features Covered
+
+### Project fundamentals
+
+- Initializing an Astro project
+- Running a local development environment
+- Creating pages with Astro, Markdown, and HTML
+- File-based routing, links, and custom 404 pages
+
+### Components and layouts
+
+- Astro component frontmatter
+- Slots and reusable UI components
+- Basic and nested layouts
+
+### Data loading
+
+- Using `fetch` in Astro components
+- Loading data from APIs and headless content sources
+- Creating static API endpoints
+
+### Styling
+
+- Scoped and global component styles
+- Astro's `class:list` and `define:vars` directives
+- Importing local and package stylesheets
+- Using CSS Modules in framework components
+
+### Routing and rendering
+
+- Generating dynamic routes at build time
+- Pagination concepts
+- Server-side rendering and per-request dynamic routes
+- API endpoints in SSR mode
+
+### Content Collections
+
+- Defining collections, loaders, and schemas
+- Adding custom slugs
+- Listing collection entries
+- Generating and rendering full post pages
+
+### Images and interactivity
+
+- Handling local images with Astro assets
+- Hydrating framework components with `client:*` directives
+- Using React and Solid in the same Astro project
+- Sharing state between islands and frameworks with Nano Stores
+
+## Running the Project
+
+Install the dependencies and start the Astro development server:
+
+```sh
 npm install
+npm run dev
 ```
 
-## What are we building?
-
-Small business site that uses several of the common workflows that many (most?) websites end up following.
-
-- Marketing landing page
-  - Hero images
-    - Image handling
-  - Cards
-    - Featured Products
-  - Newsletter capture
-- Shop 
-  - Advanced layout (nested)
-  - Shared state
-    - Solid cart
-    - React item buttons (add to cart)
-    - Nano stores to share state
-- Blog
-  - Content Collections
-    - Markdown
-  - Dynamic routes
-  - RSS feed
-- About
-  - Markdown page
-- 404 page
-
-## What features do we want to cover?
-
-- Initializing a new Astro site
-- Local development
-- Pages
-	- Supported file types
-		- Astro
-		- Markdown
-		- HTML
-	- Basic routing
-	- Links
-	- Custom 404 pages
-- Astro components
-	- Frontmatter
-	- Slots
-- Layouts
-	- Basic layouts
-	- Advanced layouts
-- Fetching data
-	- Using `fetch` in Astro and other components
-	- Loading API data
-	- Loading from a headless CMS
-- Styling
-	- Styling in Astro components
-		- Scoped styles
-		- Global styles
-	- Astro goodies for CSS
-		- `class:list`
-		- `define:vars`
-	- Importing stylesheets
-		- local
-		- npm packages
-	- In frameworks:
-		- CSS modules
-- Dynamic routes
-	- When you want to render pages once at build time
-- Pagination
-- Content Collections
-	- Basic setup and config
-		- Defining a schema
-		- Custom slugs
-	- Using collections to build pages
-		- Listing pages
-		- Full entry pages
-- Endpoints
-	- RSS
-	- APIs
-		- Static
-- SSR Mode
-	- Dynamic routing
-  	- When you want to render pages on every request
-	- API endpoints
-- Image handling
-	- The `assets` directory
-- Hydrating JS components
-	- `client:*` directives
-	- Using multiple frameworks
-	- Sharing state between islands
-	- Sharing state between frameworks
+Then open the local URL shown in the terminal.
